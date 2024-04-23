@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kalam|Long+Cang&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+			body {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: center;
+				min-height: fit-content;
+				background-image:url('imagenes/pizarron.png');
+			}
+    .container {
+      width: 800px;
+      display: flex;
+      align-items: flex-end;
+      gap: 75px;
+      padding: 150px 50px;
+      border-radius: 50px;
+    }
+    .hangman-box img {
+      max-width: 350px;
+    }
+    .hangman-box h1 {
+      font-size: 1.45rem;
+      margin-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .word-display {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .word-display .letter {
+      width: 45px;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      border-bottom: 5px solid;
+    }
+    .word-display .letter.guessed {
+      border-color: transparent;
+      margin: -40px 0 35px;
+    }
+    .game-box h4 {
+      text-align: center;
+      font-size: 1.5;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .game-box h4 b {
+      font-weight: 600;
+    }
+    .game-box .guesses-text b {
+      color: red;
+    }
+    .game-box .keyboard {
+      display: flex;
+      gap: 5px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    :where(.game-modal, .keyboard) button {
+      color: black;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      outline: mone;
+      border-color: black;
+      background: white;
+      border-radius: 7px;
+      text-transform: uppercase;
+    }
+    .keyboard button {
+      width: calc(75% / 7 - 3px);
+      padding: 3px;
+    }
+    .keyboard button[disabled] {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+    :where(.game-modal, .keyboard) button:hover {
+      background-color: darkgrey;
+    }
+    .game-modal {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      opacity: 0;
+      pointer-events: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      transition: opacity 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .game-modal.show {
+      opacity: 1.5;
+      pointer-events: auto;
+    }
+    .game-modal img {
+      max-width: 150px;
+    }
+    .game-modal .content {
+      background-color: white;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      border-radius: 10px;
+      padding: 30px;
+    }
+    .game-modal h4 {
+      font-size: 1.5rem;
+    }
+    .game-modal p {
+      font-size: 1.10rem;
+      margin: 15px 0 30px;
+      font-weight: 500;
+    }
+    .game-modal p b {
+      color: rgb(16, 166, 16);
+      font-weight: 600;
+    }
+    .game-modal button {
+      padding: 12px 23px;
+    }
+
+    @media (max-width:782px) {
+      .container {
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+      }
+      .hangman-box img {
+        max-width: 200px;
+      }
+      .hangman-box h1 {
+        display: none;
+      }
+    }
+
+
+
+
+
+    
+
+

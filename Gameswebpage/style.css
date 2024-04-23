@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+Body {
+font-family: "Lilita One", sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: black;
+color: white;
+font-size: xx-large;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+
+.main {
+    overflow: hidden;
+}
+
+/*========HEADER AND NAV=======*/
+.header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: transparent;
+}
+
+.nav{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px 0 20px;
+    }
+    
+    
+.nav__logo {
+    color: white;
+    font-size: larger;
+    transition: text-shadow .3s
+}
+
+.nav__logo:hover{
+    text-shadow: 0 2px 8px;
+}
+
+.nav__toggle, .nav__close{
+    display: flex;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav__close{
+display: none;
+}
+
+/*=============HOME============*/
+.home{
+    position: relative;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.home__container{
+    position: relative;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+.home__points{
+    width: 250px;
+    height: 190px;
+    align-items: center;
+    position: absolute;
+}
+
+.home__points:hover{
+    filter: drop-shadow(0 4px 24px hsla(185, 100%, 48%, .6))
+}
+.anaconda{
+    width: 80px;
+    height: 60px;
+    transform-origin: center;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.keyboard{
+    width: 80px;
+    height: 60px;
+    margin-right: 20%;
+    transform-origin: center;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.hangman{
+    width: 90px;
+    height: 70px;
+    margin-right: 3%;
+    transform-origin: center;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.memory{
+    width: 80px;
+    height: 80px;
+    margin-right: 2%;
+    transform-origin: center;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.home__titles{
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+}
+
+.home__subtitle,
+.home__title{
+    color: yellow;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 40px;
+    text-shadow: 0 2px 8px;
+}
+
+.home__data{
+    bottom: 4rem;
+    text-align: center;
+    margin-inline: 1.5rem;
+    position: relative;
+    bottom: 0;
+}
+
+.home__description{
+    margin-bottom: 2rem;
+}
+
+.home__button{
+    display: inline-grid;
+    position: relative;
+    position: bottom 10xp;
+    place-items: center;
+    transition: filter .4s;
+}
+
+.home__button span{
+    position: absolute;
+    color: white;
+    font-size: small;
+    font-weight: medium;
+}
+
+.home__button:hover{
+    filter: drop-shadow(0 4px 24px hsla(185, 100%, 48%, .6))
+}
+
+.nav__list, .nav__item{
+    flex-direction: row;
+    column-gap: 4rem;
+}
+
+li{
+    display: inline-block;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between
+}
+
+footer{
+    font-size: 15px;
+    text-align: center;
+}
